@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mocky – IBPS RRB Mock Test</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCREEN 1: HOME
+════════════════════════════════════════════════════════════════ -->
+<div id="screen-home" class="screen active">
+  <div class="card center">
+    <div class="logo">📝 Mocky</div>
+    <p class="subtitle">IBPS RRB PO Prelims · AI-Powered Mock Test</p>
+    <p class="tagline">Pattern learned from real Aug 2024 paper</p>
+
+    <div class="section-grid">
+      <button class="section-btn" data-section="Reasoning">
+        🧠 Reasoning
+      </button>
+      <button class="section-btn" data-section="Quantitative">
+        🔢 Quantitative
+      </button>
+      <button class="section-btn" data-section="English">
+        📖 English
+      </button>
+    </div>
+
+    <p class="note">Select a section to start your 3-question mock</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCREEN 2: EXAM
+════════════════════════════════════════════════════════════════ -->
+<div id="screen-exam" class="screen">
+  <div class="exam-header">
+    <span id="section-label">Reasoning</span>
+    <span id="q-counter">Q 1 / 3</span>
+    <span id="score-live">Score: 0</span>
+  </div>
+
+  <div class="card">
+    <div id="loading" class="loading-box">
+      <div class="spinner"></div>
+      <p>Generating question…</p>
+    </div>
+
+    <div id="question-box" style="display:none">
+      <p id="question-text" class="question-text"></p>
+
+      <div id="options-box" class="options-box"></div>
+
+      <div id="feedback-box" class="feedback-box" style="display:none">
+        <p id="feedback-text"></p>
+        <button id="btn-next" class="btn-next">Next Question →</button>
+        <button id="btn-result" class="btn-next" style="display:none;background:#27ae60">
+          See Result 🎯
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCREEN 3: RESULT
+════════════════════════════════════════════════════════════════ -->
+<div id="screen-result" class="screen">
+  <div class="card center">
+    <div class="result-score" id="result-score">0/3</div>
+    <div class="result-pct"  id="result-pct">0%</div>
+    <div class="result-grade" id="result-grade"></div>
+
+    <div id="answer-review"></div>
+
+    <button class="btn-home" onclick="goHome()">🏠 Try Another Section</button>
+  </div>
+</div>
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>

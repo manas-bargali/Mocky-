@@ -1,0 +1,92 @@
+{
+  "Reasoning": {
+    "description": "Seating arrangement, blood relations, inequalities, coding-decoding, floor puzzle",
+    "question_types": [
+      {
+        "type": "Seating Arrangement",
+        "example": "Fourteen persons sit in two parallel rows. Row-1: A,B,C,D,E,F,G face north. Row-2: P,Q,R,S,T,U,V face south. V is the only immediate neighbour of S. T sits 2nd to the left of V.",
+        "options_style": "(a) P  (b) Q  (c) R  (d) S  (e) U"
+      },
+      {
+        "type": "Inequality",
+        "example": "Statements: P > Q = R >= S < T, U <= S > W. Conclusions: I. P > T  II. W < P",
+        "options_style": "(a) Only I true (b) Only II true (c) Either I or II (d) Neither (e) Both true"
+      },
+      {
+        "type": "Blood Relation",
+        "example": "Q is the only daughter of R who is the mother-in-law of U. S is the paternal grandfather of Q's nephew.",
+        "options_style": "(a) Mother (b) Aunt (c) Uncle (d) Mother-in-law (e) None of these"
+      },
+      {
+        "type": "Floor Puzzle",
+        "example": "Ten persons N,O,P,Q,R,S,T,U,V,W live in a five-story building. Each floor has Flat-X (west) and Flat-Y (east).",
+        "options_style": "(a) Floor 1 (b) Floor 2 (c) Floor 3 (d) Floor 4 (e) None of these"
+      },
+      {
+        "type": "Coding-Decoding",
+        "example": "'happy not bad good towards' coded as 'xa pb ut nq tf'. 'good smile sorrow towards' coded as 'ut tf rd lk'.",
+        "options_style": "(a) xa (b) rd (c) nq (d) pb (e) None of these"
+      },
+      {
+        "type": "Linear Arrangement",
+        "example": "Seven persons M,N,O,P,Q,R,S sit in a row facing north. Each likes different fruits: Apple, Banana, Mango, Orange, Grapes, Pineapple, Watermelon.",
+        "options_style": "(a) Banana (b) Pineapple (c) Apple (d) Grapes (e) None of these"
+      }
+    ]
+  },
+  "Quantitative": {
+    "description": "Number series, data interpretation, arithmetic problems",
+    "question_types": [
+      {
+        "type": "Number Series",
+        "example": "361, ?, 920, 1045, 1109, 1136 (Pattern: add decreasing cubes 7^3, 6^3, 5^3...)",
+        "options_style": "(a) 873 (b) 1090 (c) 486 (d) 704 (e) 1361"
+      },
+      {
+        "type": "Data Interpretation - Pie Chart",
+        "example": "Pie chart shows orders by Twiggy and Xomato. Total=720. Thursday=20%, Friday=15%, Saturday=40%, Sunday=25%.",
+        "options_style": "(a) 45 (b) 55 (c) 35 (d) 65 (e) 75"
+      },
+      {
+        "type": "Simplification",
+        "example": "164.89/10.99 + 32.07 = 169.03 - ?",
+        "options_style": "(a) 142 (b) 92 (c) 112 (d) 122 (e) 102"
+      },
+      {
+        "type": "Word Problem - SI/CI",
+        "example": "A invests Rs P at 5% p.a. for 2 years SI. B invests Rs P+1000 at 10% p.a. for 3 years SI. Difference = 1300.",
+        "options_style": "(a) 4000 (b) 7500 (c) 10000 (d) 5000 (e) 8000"
+      },
+      {
+        "type": "Word Problem - Profit/Loss",
+        "example": "Article marked up 30% above CP, sold at 10% discount. Profit = Rs 204. Find SP at 10% profit.",
+        "options_style": "(a) 1280 (b) 1360 (c) 1240 (d) 1320 (e) 1420"
+      },
+      {
+        "type": "Word Problem - Time/Work",
+        "example": "A and B together complete work in 6 days. Time for A to do 90% = Time for B to do 60%. Find time for A to do 50%.",
+        "options_style": "(a) 7.5 days (b) 10 days (c) 5 days (d) 6 days (e) 12 days"
+      }
+    ]
+  },
+  "English": {
+    "description": "Reading comprehension, error detection, fill in the blanks",
+    "question_types": [
+      {
+        "type": "Error Detection",
+        "example": "Find grammatical error in the sentence",
+        "options_style": "(a) Part A (b) Part B (c) Part C (d) Part D (e) No error"
+      },
+      {
+        "type": "Fill in the blanks",
+        "example": "The committee _____ the proposal after a long discussion.",
+        "options_style": "(a) approved (b) approving (c) approve (d) had approve (e) None"
+      },
+      {
+        "type": "Odd Word Out",
+        "example": "FELICITOUS - use 1st, 2nd, 3rd, 6th letters to form meaningful word",
+        "options_style": "(a) F (b) I (c) E (d) X (e) Z"
+      }
+    ]
+  }
+}
