@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mocky – IBPS RRB Mock Test</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCREEN 1: HOME
+════════════════════════════════════════════════════════════════ -->
+<div id="screen-home" class="screen active">
+  <div class="card center home-card">
+    <div class="logo">📝 Mocky</div>
+    <p class="subtitle">IBPS RRB PO Prelims · AI-Powered Mock Test</p>
+    <p class="tagline">Timings mirror the real 2024 sectional-timing pattern</p>
+
+    <p class="section-heading">Sectional Practice</p>
+    <div class="subject-list" id="subject-list">
+      <!-- JS renders one row per subject with 10/15/30 pills -->
+    </div>
+
+    <div class="divider"><span>OR</span></div>
+
+    <div class="fullmock-card" id="fullmock-card">
+      <div class="fullmock-title">🏆 Full-Length Mock</div>
+      <div class="fullmock-desc" id="fullmock-desc">Loading pattern…</div>
+      <div class="fullmock-meta" id="fullmock-meta"></div>
+      <button class="btn-fullmock" id="btn-fullmock">Start Full Mock →</button>
+    </div>
+
+    <p class="note">Answers are never revealed mid-test — full analysis appears only after you submit.</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCREEN 2: GENERATING / LOADING
+════════════════════════════════════════════════════════════════ -->
+<div id="screen-loading" class="screen">
+  <div class="card center">
+    <div class="spinner"></div>
+    <p id="loading-title">Preparing your section…</p>
+    <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+    <p id="progress-text" class="note">0 / 0 questions generated</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCREEN 3: EXAM
+════════════════════════════════════════════════════════════════ -->
+<div id="screen-exam" class="screen">
+  <div class="exam-header">
+    <div class="exam-header-left">
+      <span id="section-label">Reasoning</span>
+      <span id="section-progress" class="section-progress"></span>
+    </div>
+    <div id="timer" class="timer">00:00</div>
+    <button id="btn-palette-toggle" class="btn-palette-toggle">☰ Questions</button>
+  </div>
+
+  <div class="exam-body">
+    <div id="palette-panel" class="palette-panel">
+      <div class="palette-legend">
+        <span><i class="legend-dot answered"></i> Answered</span>
+        <span><i class="legend-dot visited"></i> Not Answered</span>
+        <span><i class="legend-dot unvisited"></i> Not Visited</span>
+      </div>
+      <div id="palette-grid" class="palette-grid"></div>
+    </div>
+
+    <div class="card question-card">
+      <div class="q-meta">Question <span id="q-num">1</span> of <span id="q-total">10</span></div>
+      <p id="question-text" class="question-text"></p>
+      <div id="options-box" class="options-box"></div>
+
+      <div class="exam-nav">
+        <button id="btn-prev" class="btn-nav">← Previous</button>
+        <button id="btn-clear" class="btn-nav btn-clear">Clear Response</button>
+        <button id="btn-next" class="btn-nav btn-primary">Save &amp; Next →</button>
+      </div>
+      <button id="btn-submit-section" class="btn-submit">Submit Section</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCREEN 4: TRANSITION (between sections of a Full Mock)
+════════════════════════════════════════════════════════════════ -->
+<div id="screen-transition" class="screen">
+  <div class="card center">
+    <div class="transition-icon">✅</div>
+    <p id="transition-text" class="transition-text">Section complete!</p>
+    <p class="note" id="transition-next"></p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCREEN 5: RESULT & ANALYSIS
+════════════════════════════════════════════════════════════════ -->
+<div id="screen-result" class="screen">
+  <div class="card center result-card">
+    <div class="result-score" id="result-score">0/0</div>
+    <div class="result-pct"  id="result-pct">0%</div>
+    <div class="result-grade" id="result-grade"></div>
+
+    <div id="section-breakdown" class="section-breakdown"></div>
+
+    <h3 class="analysis-heading">📊 Topic-wise Analysis</h3>
+    <div id="topic-analysis" class="topic-analysis"></div>
+
+    <h3 class="analysis-heading">📝 Answer Review</h3>
+    <div id="answer-review"></div>
+
+    <button class="btn-home" onclick="goHome()">🏠 Take Another Test</button>
+  </div>
+</div>
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>
